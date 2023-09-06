@@ -18,13 +18,13 @@ body {
   margin: -4px auto;
 }
 
-#bg-artwork {
+#bg-colour {
   position: fixed;
   top: -30px;
   right: -30px;
   bottom: -30px;
   left: -30px;
-  background-image: url("https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_1.jpg");
+  background-color: #fffff;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
@@ -216,17 +216,7 @@ body {
 
 #album-art.active img.active {
   z-index: 1;
-  -webkit-animation: rotateAlbumArt 3s linear 0s infinite forwards;
-          animation: rotateAlbumArt 3s linear 0s infinite forwards;
-}
-
-@-webkit-keyframes rotateAlbumArt {
-  0% {
-    transform: rotateZ(0);
-  }
-  100% {
-    transform: rotateZ(360deg);
-  }
+  animation: rotateAlbumArt 3s linear 0s infinite forwards;
 }
 
 @keyframes rotateAlbumArt {
